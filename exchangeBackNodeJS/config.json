@@ -1,0 +1,8 @@
+{
+    "timezone": "America/Argentina/Buenos_Aires",
+    "port": "3000",
+    "server": "http://localhost/",
+    "host": "http://localhost:3000",
+    "keyCambioToday": "1507|1FL~3eLSEXid42YTB1HLm73i5pOLDMUk",
+    "exchangesTop": [{"name":"USD"}, {"name":"EUR"}, {"name":"BRL"}]
+}
