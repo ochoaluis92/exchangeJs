@@ -16,14 +16,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > "if you dont have git installer you can donwload .zip from the repository"
 
 2) Go to the folde exchangeBackNodeJS
-	2.1) Open terminal (CMD, POWERSHELL...), and excute
+	2.1) Open terminal (CMD, POWERSHELL...), and excute:
 	
-`npm start`
+First `npm install`
+
+After `npm start`
 
 3) Go to the folde exchangeFrontReactJS
 3.1) Open terminal (CMD, POWERSHELL...), and excute
 	
-`npm start`
+First `npm install`
+
+After `npm start`
 
 	This step open your browser in http://localhost:3001/ 
 	In others case you can go to your browser and use the URL http://localhost:3001/
