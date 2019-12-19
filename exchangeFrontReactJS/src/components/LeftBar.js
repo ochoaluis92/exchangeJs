@@ -24,7 +24,7 @@ class LeftBar extends React.Component {
             const requestPool = [];
             const exchanges = [];
             exchangesTop.forEach(element => {
-                requestPool.push(axios.get('http://localhost:3000/exchange/exchange/' + element.name+'/ARS'));
+                requestPool.push(axios.get('http://localhost:3000/exchange/' + element.name+'/ARS'));
             });
 
             axios.all(requestPool).then(axios.spread((...responses) => {
@@ -44,7 +44,6 @@ class LeftBar extends React.Component {
         }, 5000);
     };
     render(){
-        let s1 = {verticalAlign: 'middle'};
         return (
             <div>
                 <LinearProgress color="secondary" style={this.state.load ? {}: { display: 'none' }}/>           

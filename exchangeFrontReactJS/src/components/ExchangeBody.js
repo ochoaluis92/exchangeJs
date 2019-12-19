@@ -32,7 +32,7 @@ class ExchangeBody extends React.Component {
         axios.get('http://localhost:3000/exchange/currencies')
         .then(res => {
             let currencies = res.data;
-            if(currencies != "error"){
+            if(currencies !== "error"){
                 var select = Object.entries(currencies);
                 var array = [];
                 select.forEach(element => {
@@ -53,7 +53,7 @@ class ExchangeBody extends React.Component {
      * @param {*} currencyTo 
      */
     calculatedExchange(currencyFrom, currencyTo){
-        axios.get('http://localhost:3000/exchange/exchange/'+currencyFrom+'/'+currencyTo)
+        axios.get('http://localhost:3000/exchange/'+currencyFrom+'/'+currencyTo)
         .then(res => {
             const exchange = res.data;
             this.setState({"select": this.state.select, "exchange": exchange, "exchangeFromTo": [currencyFrom,currencyTo]});         
