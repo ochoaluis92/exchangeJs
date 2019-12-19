@@ -29,7 +29,7 @@ router.get('/currencies', function(req, res, next) {
  *  http://api.devises.zone/v1/quotes/ARS/{parameter}/json?qty=1&k={YOUR_KEY}
  *  
  */
-router.get('/exchange/:currencyFrom/:currencyTo', function(req, res, next) {
+router.get('/:currencyFrom/:currencyTo', function(req, res, next) {
     let key = config.keyCambioToday;
     let currencyFrom = parsedCurrencyType(req.param('currencyFrom'));
     let currencyTo = parsedCurrencyType(req.param('currencyTo'));
